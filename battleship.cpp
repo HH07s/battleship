@@ -259,7 +259,7 @@ void playVsComputer(){
             continue;
         }
         else if(computerShips[row][column] == '1'){
-            std::cout << GREEN << "Target hit!" << RESET << std::endl;
+            std::cout << GREEN << "You hit a ship at (" << row << "," << column << ")!" << RESET << std::endl;
             computerShips[row][column] = 'H';
             computerShipsRemaining = computerShipsRemaining - 1;
 
@@ -268,7 +268,7 @@ void playVsComputer(){
             attemptsUsed++;
         }
         else if(computerShips[row][column] == '0'){
-            std::cout << RED << "Target miss!" << RESET << std::endl;
+            std::cout << RED << "You missed at (" << row << "," << column << ")." << RESET << std::endl;
             computerShips[row][column] = 'M';
 
             std::cout << "Ships remaining: " << computerShipsRemaining << std::endl;
