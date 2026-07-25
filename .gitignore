@@ -1,0 +1,22 @@
+# Compiled binaries
+battleship
+battleship.exe
+*.out
+*.exe
+*.o
+*.obj
+
+# Debug files
+*.dSYM/
+*.pdb
+*.ilk
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
